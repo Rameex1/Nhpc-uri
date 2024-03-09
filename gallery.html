@@ -1,0 +1,154 @@
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <ul class="slider">
+      <li class="item" style="background-image: url('gallery2/IMG_20240307_120801.jpg');">
+        
+      </li>
+      <li class="item" style="background-image: url('gallery2/IMG_20240307_120828.jpg')">
+       
+      </li>
+      <li class="item" style="background-image: url('gallery2/IMG_20240307_120914.jpg');">
+       
+      </li>
+      <li class="item" style="background-image: url('gallery2/IMG_20240307_121115.jpg');">
+        
+      </li>
+      <li class="item" style="background-image: url('gallery2/IMG_20240307_121125.jpg');">
+       
+        </div>
+      </li>
+      <li class="item" style="background-image: url('gallery2/IMG_20240307_121237.jpg');">
+        
+      </li>
+       <li class="item" style="background-image: url('https://images.unsplash.com/photo-1707343843982-f8275f3994c5?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8.jpg');">
+       
+      </li>
+    </ul>
+    <nav class="nav">
+      <ion-icon class="btn prev" name="arrow-back-outline"></ion-icon>
+      <ion-icon class="btn next" name="arrow-forward-outline"></ion-icon>
+    </nav>
+  </main>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
+<style>
+    
+    { 
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.item {
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 30px rgba(255, 255, 255, 0.3) inset;
+  transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s;
+}
+
+.item:nth-child(1),
+.item:nth-child(2) {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: none;
+  border-radius: 0;
+  box-shadow: none;
+  opacity: 1;
+}
+
+.item:nth-child(3) {
+  left: 50%;
+}
+
+.item:nth-child(4) {
+  left: calc(50% + 220px);
+}
+
+.item:nth-child(5) {
+  left: calc(50% + 440px);
+}
+.item:nth-of-type(2) .content {
+  display: block;
+  animation: show 0.75s ease-in-out 0.3s forwards;
+}
+
+@keyframes show {
+  0% {
+    filter: blur(5px);
+    transform: translateY(calc(-50% + 75px));
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.nav {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  user-select: none;
+}
+
+.nav .btn {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  margin: 0 0.25rem;
+  padding: 0.75rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+@media (width > 650px) and (width < 900px) 
+  .item {
+    width: 50px;
+    height: 70px;
+  }
+}
+
+@media (width < 650px) 
+
+  .item {
+    width: 50px;
+    height: 80px;
+  } 
+
+</style>
+
+
+
+<script>
+    const slider = document.querySelector(".slider");
+function activate(e) { const items = document.querySelectorAll(".item"); e.target.matches(".next") && slider.append(items[0]); e.target.matches(".prev") && slider.prepend(items[items.length - 1]);}
+document.addEventListener("click", activate, false);
+    </script>
