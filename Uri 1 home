@@ -1,0 +1,33 @@
+
+<HTML>
+  <HEAD>
+  <TITLE> URI II </TITLE>
+  </HEAD>
+  <BODY IMG background="images/IMG_1004.JPG">
+  <BR>
+  <center><font face="COOPER" size="10">NHPC</font></center><BR>
+  <center><font face="Copperplate Gothic" size="10">URI II</font></center><BR>
+  <table border="4" cellpadding="0" align="center" cellspacing="0" bordercolor="WHITE">
+  <td>
+  <IMG SRC="images/IMG_0902.PNG" align="center" HEIGHT="500PX" WIDTH="700PX">
+  </td>
+  </table>
+  <br><br>
+  <table border="4" cellpadding="0" align="center" cellspacing="0" bordercolor="WHITE">
+  <td>
+  <img src="images/IMG_094.PNG" HEIGHT="500PX" WIDTH="900PX">
+  </td>
+  </table>
+  <br>
+  <table border="0" cellpadding="0" cellspacing="0" ALIGN="RIGHT" HEIGHT="40%" WIDTH="40%">
+    <td>
+      <CENTER><FONT SIZE="15" FACE="COPPERPLATE GOTHIC">LOCATION</FONT></CENTER><BR>
+       <H3>THE HYDROELECTRIC PROJECT IS LOCATED NEAR THE BORDER OF INDIA-PAKISTAN(NEAR THE LINE OF CONTROL).
+        THE STATION IS LARGELY BUILT UNDER A HILL TUNNEL WITH A 10 KM TUNNEL.IT IS OF THE RUN-OF-THE-RIVER TYPE WITHOUT
+        A LARGE DAM,SINCE THE INDUS WATER TREATY GIVES PAKISTAN THE EXCLUSIVE RIGHT TO REGULATE THE JHELUM RIVER.</H3>
+
+    </td>
+  </table>
+  <img src="images/location2.png" height="50%" width="50%">
+  </BODY>
+  </HTML>
